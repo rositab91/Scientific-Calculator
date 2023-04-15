@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculator2.0</title>
+</head>
+
+<body>
+    <h1>Calculator 2.0</h1>
+    
+    <div id="calculator">
+        <div>
+            <input id="result" type="text">
+        </div>
+        <div>
+            <div class="stBtn">
+                <button id="sqrt" onclick="calculateSquareRoot()">√</button>
+                <button id="sqr" onclick="calculateSquare()">x²</button>
+                <button id="cube" onclick="calculateCube()">x³</button>
+            </div>
+            <div class="ndBtn">
+                <button id="1" onclick="thisButton(this)">1</button>
+                <button id="2" onclick="thisButton(this)">2</button>
+                <button id="3" onclick="thisButton(this)">3</button>
+                <button id="/" onclick="thisButton(this)">/</button>
+            </div>
+            <div class="rdBtn">
+                <button id="4" onclick="thisButton(this)">4</button>
+                <button id="5" onclick="thisButton(this)">5</button>
+                <button id="6" onclick="thisButton(this)">6</button>
+                <button id="*" onclick="thisButton(this)">x</button>
+            </div>
+            <div class="thBtn">
+                <button id="7" onclick="thisButton(this)">7</button>
+                <button id="8" onclick="thisButton(this)">8</button>
+                <button id="9" onclick="thisButton(this)">9</button>
+                <button id="-" onclick="thisButton(this)">-</button>
+            </div>
+            <div class="thndBtn">
+                <button id="C" onclick="resetCalculator()">C</button>
+                <button id="0" onclick="thisButton(this)">0</button>
+                <button id="." onclick="thisButton(this)">.</button>
+                <button id="+" onclick="thisButton(this)">+</button>
+            </div>
+        </div>
+        <div id="equal">
+            <button id="=" class="equalBtn" onclick="total()">=</button>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
